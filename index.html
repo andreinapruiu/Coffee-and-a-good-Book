@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Coffee and a good Book</title>
+  </head>
+  <body>
+    <div id="quote"></div>
+    <script>
+      // Send an HTTP request to the file with the quote
+      fetch('random_quote.txt')
+        .then(response => response.text()) // Extract the text from the response
+        .then(quote => {
+          // Find the element where the quote will be displayed
+          const quoteElement = document.getElementById('quote');
+          // Set the text of the element to the quote
+          quoteElement.textContent = quote;
+        });
+    </script>
+  </body>
+</html>
