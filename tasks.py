@@ -8,6 +8,8 @@ with open('quotes.txt') as f:
 # Use the random.choice() function to randomly choose a quote from the list
 random_quote = random.choice(quotes)
 
-with open('random_quote.txt', 'w') as f:
-    # Write the quote to the file
-    f.write(random_quote)
+# with open('random_quote.txt', 'w') as f:
+#     # Write the quote to the file
+#     f.write(random_quote)
+
+print(random_quote)
