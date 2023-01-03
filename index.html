@@ -1,19 +1,22 @@
 <html>
   <head>
     <title>Coffee and a good Book</title>
+	<link rel="stylesheet" href="mystyle.css">
   </head>
   <body>
-    <div id="quote"></div>
-    <script>
-      // Send an HTTP request to the file with the quote
-      fetch('random_quote.txt')
-        .then(response => response.text()) // Extract the text from the response
-        .then(quote => {
-          // Find the element where the quote will be displayed
-          const quoteElement = document.getElementById('quote');
-          // Set the text of the element to the quote
-          quoteElement.textContent = quote;
-        });
+	<div id="loader-wrapper">
+		<div class="loadingscreenclass" id="loadingscreen">
+			<section class="loading">
+				<div id="quote"></div><br>
+				<span class="loading__anim"></span>
+			</section>
+		</div>
+
+		<div class="loader-section section-left"></div>
+    	<div class="loader-section section-right"></div>
+	</div>
+	<div id="content">salut</div>
+    <script src="index.js">
     </script>
   </body>
 </html>
