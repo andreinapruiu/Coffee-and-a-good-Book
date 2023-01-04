@@ -1,0 +1,77 @@
+* {
+	background-color: rgb(162, 198, 166);
+	font-family: 'Times New Roman', Times, serif;
+	color:rgb(87, 130, 87);
+}
+
+.allElements {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.title {
+	font-family: Lucida Handwriting;
+	font-weight: bold;	
+	color:rgb(87, 130, 87);
+	font-size: xxx-large;
+	text-align:center;
+	
+}
+
+ .searchBarClass {
+	margin-left: 10rem;
+	margin-right: 5rem;
+	
+}
+
+.input {
+	border: 2px solid rgb(182, 204, 181);
+	border-radius: 7px;
+	outline: none;
+	padding: 1rem;
+	width: 40vw;
+	box-shadow: 0 0 5px rgba(145, 178, 160, 0.72);
+	font-size: 1.5rem;
+	background-color: rgb(209, 223, 211);
+	font-family: 'Times New Roman', Times, serif;
+	color:rgb(87, 130, 87);
+	
+}
+
+.searchItem {
+	color:rgb(87, 130, 87);
+	padding: 1rem;
+}
+
+::-webkit-input-placeholder {
+	font-style: italic;
+	color: rgba(68, 177, 112, 0.281);
+ }
+ :-moz-placeholder {
+	font-style: italic;  
+	color: rgba(68, 177, 112, 0.281);
+ }
+ ::-moz-placeholder {
+	font-style: italic;  
+	color: rgba(68, 177, 112, 0.281);
+ }
+ :-ms-input-placeholder {  
+	font-style: italic; 
+	color: rgba(68, 177, 112, 0.281);
+ }
+
+ .list {
+	font-family: Lucida Handwriting;
+	font-weight: bold;	
+	color:rgb(87, 130, 87);
+	text-align: center;
+	font-size: 1rem;
+	margin-left: 1rem;
+ }
+
+ .image{
+	width:9vw;
+	margin:1rem;
+ }
