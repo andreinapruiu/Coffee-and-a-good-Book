@@ -1,58 +1,96 @@
-<html>
-  <head>
-    <title>Coffee and a good Book</title>
-    <link rel = "stylesheet" href = "mystyle.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <img src="imgbin_books-book-png.png" class = "image">
-    <img src="imgbin_coffee-cup-drink-png.png" class="image" style="float: right;">
-    <div id="quote"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Coffee and a good Book</title>
+	<link rel = "stylesheet" href = "mystyle.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+	<script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
 
-    <!-- <py-script src="tasks.py"></py-script> -->
-  <div class = "allElements">
+	<style>
+		.bd-placeholder-img {
+		  font-size: 1.125rem;
+		  text-anchor: middle;
+		  -webkit-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+  
+		@media (min-width: 768px) {
+		  .bd-placeholder-img-lg {
+			font-size: 3.5rem;
+		  }
+		}
+	</style>
+</head>
+	<body>
+	<div style="display: flex; justify-content: space-between;">
+		<img src="../extra images/imgbin_books-book-png.png" class = "image">
+		<b><div id="quote" class="random-quote"></div></b>
+		<img src="../extra images/imgbin_coffee-cup-drink-png.png" class="image" style="float: right;">
+	</div>
+	<!-- <py-script src="tasks.py"></py-script> -->
+	<div class = "allElements">
 
-    <div class = "searchBarClass" id = "searchBarID">
-      <p class = "title">
-        Coffee and a good Book
-      </p>
-      <br>
-      <form style = "display: flex; justify-content: center; align-items: center;">
-        <label><i class="fa fa-search w3-xxlarge searchItem"aria-hidden="true"></i></label>
-        <input type="text" id = "inputID" class = "input" placeholder="What do you want to read today?">
-      </form>
-    </div>  
+	<div class = "searchBarClass" id = "searchBarID">
+		<p class = "title">
+		Coffee and a good Book
+		</p>
+		<br>
+		<div style = "display: flex; justify-content: center; align-items: center;">
+		<label><i class="fa fa-search w3-xxlarge searchItem" aria-hidden="true"></i></label>
+		<input id = "inputID" class = "input" placeholder="What do you want to read today?"/>
+		</div>
+	</div>  
+	<form action="/" class="form-signin" method="POST">
+		<i style="background-color: transparent" class="fas fa-envelope-open-text"></i>
+		<h1 style="font-family: Lucida Handwriting;background-color: transparent; color: rgb(218,144,114)" class="h3 mb-3 font-weight-normal">Join our newsletter!</h1>
+  
+		<input type="text" name="fName" class="form-control top" placeholder="First Name" required autofocus autocomplete= 'off'>
+		<input type="text" name ="lName" class="form-control middle" placeholder="Last Name" required>
+		<input type="email" name= "email" class="form-control bottom" placeholder="Email" required>
 
-    <div class = "list">
-      <ul style="list-style-type: none; font-family: Lucida Handwriting;">Top Books in 2022
-        <li>1. Atomic Habits, James Clear</li>
-        <li>2. It Starts with Us, Colleen Hoover</li>
-        <li>3. Where the Crawdads Sing, Delia Owens</li>
-        <li>4. It Ends With Us, Colleen Hoover</li>
-        <li>5. Honey and Spice, Bolu Babalola</li>
-        <li>6. In Love, Amy Bloom</li>
-        <li>7. Everywhere With You, Carlie Sorosiak</li>
-        <li>8. In Love, Amy Bloom</li>
-        <li>9. Trust, Hernan Diaz</li>
-        <li>10. The Furrows, Namwali Serpell</li>
-      </ul>
-    </div>
+		<button class="btn btn-lg btn-primary btn-block" style="background-color: rgb(187,159,164);" type="submit">Sign Up</button>
+		<!-- <p style="text-align: center;background-color: transparent; color: blue;" class="mt-5 mb-3 text-muted">You can unsubscribe at any time </p> -->
+  	</form>
+	
+	</div>
+	<div class = "list">
+		<ul style="list-style-type: none; font-family: Lucida Handwriting;">Top Books in 2022
+			<li>1. Atomic Habits, James Clear</li>
+			<li>2. It Starts with Us, Colleen Hoover</li>
+			<li>3. Where the Crawdads Sing, Delia Owens</li>
+			<li>4. It Ends With Us, Colleen Hoover</li>
+			<li>5. Honey and Spice, Bolu Babalola</li>
+			<li>6. In Love, Amy Bloom</li>
+			<li>7. Everywhere With You, Carlie Sorosiak</li>
+			<li>8. In Love, Amy Bloom</li>
+			<li>9. Trust, Hernan Diaz</li>
+			<li>10. The Furrows, Namwali Serpell</li>
+		</ul>
+	</div>
+	<!-- <script>
+		// Send an HTTP request to the file with the quote
+		fetch('random_quote.txt')
+		.then(response => response.text()) // Extract the text from the response
+		.then(quote => {
+			// Find the element where the quote will be displayed
+			const quoteElement = document.getElementById('quote');
+			// Set the text of the element to the quote
+			quoteElement.textContent = quote;
+		});
+	</script> -->
 
-  </div>
-    <!-- <script>
-      // Send an HTTP request to the file with the quote
-      fetch('random_quote.txt')
-        .then(response => response.text()) // Extract the text from the response
-        .then(quote => {
-          // Find the element where the quote will be displayed
-          const quoteElement = document.getElementById('quote');
-          // Set the text of the element to the quote
-          quoteElement.textContent = quote;
-        });
-    </script> -->
-
-  </body>
+	<script src="index.js"></script>
+	</body>
 </html>
