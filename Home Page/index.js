@@ -1,3 +1,21 @@
+document.addEventListener('DOMContentLoaded', (event) => {
+	fetch('random_quote.txt')
+        .then(response => response.text()) // Extract the text from the response
+        .then(quote => {
+          // Find the element where the quote will be displayed
+          const quoteElement = document.getElementById('quote');
+          // Set the text of the element to the quote
+          quoteElement.textContent = quote;
+        });
+	
+	setTimeout(function() {
+		document.body.classList.add('loaded');
+		setTimeout(function() {
+			document.getElementById("loader-wrapper").style.display = "none";
+			document.getElementById("somethings").style.display = "block";
+		}, 2000)
+	}, 4000);
+});
 
 document.getElementById("inputID").onkeydown = function(event) {
 	if (event.keyCode == 13) {
@@ -13,12 +31,12 @@ document.getElementById("inputID").onkeydown = function(event) {
 			case 'haig matt':
 			case 'matt h':
 				window.location.replace("../extra HTML/MattHaig.html");
-			  	break;
+				  break;
 			case 'paulo coelho':
 			case 'paulo c':
 			case 'coelho paulo':
 				window.location.replace("../extra HTML/PauloCoelho.html");
-			  	break;
+				  break;
 			case 'fantasy':
 				window.location.replace("../extra HTML/fantasy.html");
 				break;
@@ -29,21 +47,11 @@ document.getElementById("inputID").onkeydown = function(event) {
 				window.location.replace("../extra HTML/easteregg.html");
 				break;
 			default:
-			  	console.log("Sorry, we don't have that author or genre.");
-			  	break;
+				  console.log("Sorry, we don't have that author or genre.");
+				  break;
 		}
-		//   The switch statement compares the value of the day variable to the values provided in each case clause. If a match is found, the code block associated with that case is executed. The break statement is used to exit the switch statement and prevent the code from running into the next case. The default clause is optional and is used to specify a block of code to run if no case matches the value of the expression.
-		  
-		  
-		  
-		  
 		  
 	}
-}
-
-function random_quote() {
-	var random = Math.floor(Math.random() * quotes.length);
-	document.getElementById("quote").innerHTML = quotes[random];
 }
 
 const quotes = [
@@ -79,8 +87,14 @@ const quotes = [
 	"Opportunity is missed by most people because it is dressed in overalls and looks like work. ~Thomas Edison"
 ];
 
+function random_quote() {
+	var random = Math.floor(Math.random() * quotes.length);
+	document.getElementById("quoterandom").innerHTML = quotes[random];
+}
+
 (function(){
-    random_quote();
-    setTimeout(arguments.callee, 7000);
+	random_quote();
+	setTimeout(arguments.callee, 7000);
 })();
 
+random_quote()
