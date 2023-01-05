@@ -1,5 +1,7 @@
 &copy; 2022-2023 **Andra-Ioana Stoica** & **Andrei Napruiu** -> **322CA**
 
+Most of the project can be seen in the andra branch because we worked more on her laptop.
+
 [Github](https://github.com/andreinapruiu/Coffee-and-a-good-Book)
 # Coffee-and-a-good-Book
 
