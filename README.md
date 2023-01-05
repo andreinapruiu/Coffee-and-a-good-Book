@@ -36,6 +36,7 @@ As you can see in the first seconds of opening the site, we created a loading sc
 - As you can see, we have a newsletter design, but it's not working. Because we wanted to respect the deadline, we submitted the project as it is, but we want to implement a newsletter that sends emails monthly, recommending books. We will use mailchimp for indexing the emails registered in the newsletter.
 - We want to do the search bar to suggest some autocompletion on the spot, maybe with some AI.
 - We want to create and use a database for the quotes, books and authors.
+- We want to find a way to make the python script run itself.
 
 ## How to run it?
 > First thing first, be sure you have installed Docker.
@@ -56,6 +57,12 @@ docker run -dp 80:80 cagb
 This should run your docker in the 80 port (if you want to use other port, or the 80 port isn't free you can try with either 80:80 or 5500).
 
 All that's left is to go into Docker and open the project from there.
+
+If you want to change the quote from the loading screen, you will need to run the script:
+
+```
+python3 tasks.py
+```
 
 ## Conclusion
 We consider time management is the most important thing when doing a project so we think we could do better, but we learned a lot, especially when working with JS and Docker, considering we both were noobies and tried everything from scratch. We consider it a good project that can be improved at any time.
