@@ -50,10 +50,10 @@ Here you can either consider looking over the code, or continue with running it.
 
 ```
 docker build -t cagb .
-docker run -dp 3000:3000 cagb
+docker run -dp 80:80 cagb
 ```
 
-This should run your docker in the 3000 port (if you want to use other port, or the 3000 port isn't free you can try with either 80:80 or 5500).
+This should run your docker in the 80 port (if you want to use other port, or the 80 port isn't free you can try with either 80:80 or 5500).
 
 All that's left is to go into Docker and open the project from there.
 
